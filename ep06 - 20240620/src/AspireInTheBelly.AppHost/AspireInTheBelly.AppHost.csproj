@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="..\AspireInTheBelly.ApiService\AspireInTheBelly.ApiService.csproj" />
     <ProjectReference Include="..\AspireInTheBelly.Web\AspireInTheBelly.Web.csproj" />
+    <ProjectReference Include="..\AspireInTheBelly.WorkerService\AspireInTheBelly.WorkerService.csproj" />
   </ItemGroup>
 
   <ItemGroup>

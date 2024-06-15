@@ -17,6 +17,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9EB3BA12-03E
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{87DFD1C8-D8B5-47DD-8566-1516CB8DF426}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireInTheBelly.WorkerService", "src\AspireInTheBelly.WorkerService\AspireInTheBelly.WorkerService.csproj", "{E4806C42-BA15-4E68-8665-076212071F9C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{E0C1C163-E542-4E8A-A32E-A6E8F8E69706}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0C1C163-E542-4E8A-A32E-A6E8F8E69706}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0C1C163-E542-4E8A-A32E-A6E8F8E69706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E4806C42-BA15-4E68-8665-076212071F9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E4806C42-BA15-4E68-8665-076212071F9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E4806C42-BA15-4E68-8665-076212071F9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E4806C42-BA15-4E68-8665-076212071F9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{DC089616-F36E-4C45-A610-6E8EDF198EB9} = {9EB3BA12-03E3-4F2F-BE6C-D96D1FC54E51}
 		{7B17B3BA-B4CF-4F61-BE6D-2B8EE938D459} = {9EB3BA12-03E3-4F2F-BE6C-D96D1FC54E51}
 		{E0C1C163-E542-4E8A-A32E-A6E8F8E69706} = {87DFD1C8-D8B5-47DD-8566-1516CB8DF426}
+		{E4806C42-BA15-4E68-8665-076212071F9C} = {9EB3BA12-03E3-4F2F-BE6C-D96D1FC54E51}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C0844F1F-6D2F-4E70-962A-FFC3A9346890}

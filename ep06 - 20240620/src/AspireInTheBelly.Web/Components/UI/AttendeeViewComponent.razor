@@ -1,0 +1,43 @@
+﻿@using AspireInTheBelly.Web.Models
+@using AspireInTheBelly.Web.Services
+@inject IAttendeeViewService Attendee
+
+<div class="container">
+    <h3>Attendees</h3>
+
+    @if (Attendees.Count == 0)
+    {
+        <p>No attendees found.</p>
+    }
+    else
+    {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Mobile</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var attendee in Attendees)
+                {
+                    <tr>
+                        <td>@attendee.Name</td>
+                        <td>@attendee.Email</td>
+                        <td>@attendee.Mobile</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+</div>
+
+@code {
+    List<Attendee> Attendees { get; set; } = [];
+
+    protected override async Task OnInitializedAsync()
+    {
+        Attendees = await this.Attendee.GetAttendeesAsync();
+    }
+}

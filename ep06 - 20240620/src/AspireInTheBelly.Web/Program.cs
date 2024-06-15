@@ -2,14 +2,13 @@ using AspireInTheBelly.Web;
 using AspireInTheBelly.Web.Components;
 using AspireInTheBelly.Web.Services;
 
-using Azure.Storage.Queues;
-
 var builder = WebApplication.CreateBuilder(args);
 
 // Add service defaults & Aspire components.
 builder.AddServiceDefaults();
 
 builder.AddAzureQueueClient("queue");
+builder.AddAzureTableClient("table");
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -23,6 +22,7 @@ builder.Services.AddHttpClient<WeatherApiClient>(client =>
     });
 
 builder.Services.AddScoped<IAttendeeRegistrationService, AttendeeRegistrationService>();
+builder.Services.AddScoped<IAttendeeViewService, AttendeeViewService>();
 
 var app = builder.Build();
 
