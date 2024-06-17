@@ -2,6 +2,14 @@
 
 Aspire in the Belly 쇼에서 사용한 샘플 코드 모음
 
+## 목차
+
+- [EP01: Aspire 대시보드의 모든 것](./ep01%20-%2020240404/)
+- [EP02: Aspire 컴포넌트 소개](./ep02%20-%2020240418/)
+- [EP03: Aspire 앱 배포하기](./ep03%20-%2020240502/)
+- [EP04: Spring 백엔드와 Aspire 통합하기](./ep04%20-%2020240516/)
+- [EP06: Azure용 Aspire 컴포넌트 소개](./ep06%20-%2020240620/)
+
 ## 문서 리소스
 
 - [Aspire in the Belly 관련 링크 모음집](https://aka.ms/aspire-in-the-belly)
