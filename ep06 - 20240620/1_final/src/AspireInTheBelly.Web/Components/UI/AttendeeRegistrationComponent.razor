@@ -1,0 +1,58 @@
+﻿@page "/attendee-registration"
+@using AspireInTheBelly.Web.Models
+@using AspireInTheBelly.Web.Services
+@inject IAttendeeRegistrationService Attendee
+
+<div class="container">
+    <h3>Attendee Registration</h3>
+
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" @bind="@Name">
+    </div>
+
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" @bind="@Email">
+    </div>
+
+    <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="tel" class="form-control" id="mobile" @bind="@Mobile">
+    </div>
+
+    <div class="form-group">
+        <button type="button" class="btn btn-primary" @onclick="RegisterAsync">Register</button>
+        <button type="button" class="btn btn-secondary" @onclick="ResetAsync">Reset</button>
+    </div>
+
+    <div>
+        <p>Receipt ID: @ReceiptId</p>
+    </div>
+</div>
+
+@code {
+    private string? Name { get; set; }
+    private string? Email { get; set; }
+    private string? Mobile { get; set; }
+    private string? ReceiptId { get; set; }
+
+    private async Task RegisterAsync()
+    {
+        var attendee = new Attendee(Name, Email, Mobile);
+
+        var result = await this.Attendee.RegisterAttendeeAsync(attendee);
+
+        ReceiptId = result.MessageId;
+    }
+
+    private async Task ResetAsync()
+    {
+        Name = string.Empty;
+        Email = string.Empty;
+        Mobile = string.Empty;
+        ReceiptId = string.Empty;
+
+        await Task.CompletedTask;
+    }
+}
