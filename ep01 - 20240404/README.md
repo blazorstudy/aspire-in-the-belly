@@ -14,3 +14,17 @@ Link: [https://aka.ms/aspire-in-the-belly/ep01](https://aka.ms/aspire-in-the-bel
 
 🔗 링크: https://aka.ms/aspire-in-the-belly
 🎙️ 진행: 김진석 (Microsoft MVP), 박구삼 (Microsoft MVP)
+
+# Source Code 설명
+
+AspireEp01.sln 솔루션을 열어 Aspire의 전체적인 구조를 파악할 수 있는 프로젝트입니다.
+.NET Aspire 시작 어플리케이션 프로젝트로 생성한 내용과 거의 다르지 않습니다.
+
+- AspireEp01.ApiService : 웹 백엔드 프로젝트
+- AspireEp01.AppHost : Aspire 대시보드 프로젝트
+- AspireEp01.ServiceDefaults : OTEL을 쉽게 구현하기 위한 서비스 프로젝트
+- AspireEp01.WEb : 웹 프론트엔드 프로젝트
+
+**참고사항**   
+http 구성의 경우 launchSettings.json파일에 ASPIRE_ALLOW_UNSECURED_TRANSPORT설정을 해주어야 합니다.   
+[Allow unsecure transport in .NET Aspire](https://learn.microsoft.com/ko-kr/dotnet/aspire/troubleshooting/allow-unsecure-transport?tabs=windows&WT.mc_id=MVP_307888) 를 참고하세요.
