@@ -12,3 +12,20 @@ Link: [https://aka.ms/aspire-in-the-belly/ep02](https://aka.ms/aspire-in-the-bel
 
 🔗 링크: https://aka.ms/aspire-in-the-belly
 🎙️ 진행: 김진석 (Microsoft MVP), 박구삼 (Microsoft MVP)
+
+
+# Source Code 설명
+
+AspireEp02.sln 솔루션을 열어 Aspire와 RabbitMQ 컴포넌트가 어떻게 연결됐는지를 파악할 수 있는 프로젝트입니다.
+
+기본적으로 [AspireEp01](../ep01%20-%2020240404/README.md)의 구조에서 RabbitMQ 컴포넌트를 갖는 서비스만 추가하였습니다.
+
+- AspireEp02.ApiService
+- AspireEp02.AppHost
+- AspireEp02.ServiceDefaults
+- AspireEp02.Web
+- **AspireEp02.RabbitMQService** (추가)
+
+### 참고사항
+
+[AspireEp02.RabbitMQService](./AspireEp02.RabbitMQService/AspireEp02.RabbitMQService.csproj)를 [AspireEp02.AppHost](./AspireEp02.AppHost/AspireEp02.AppHost.csproj)에서 Container로 선언하였기에 이 예제에서는 Docker가 필요합니다.
