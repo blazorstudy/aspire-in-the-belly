@@ -12,3 +12,9 @@ Link: [https://aka.ms/aspire-in-the-belly/ep06](https://aka.ms/aspire-in-the-bel
 
 🔗 링크: https://aka.ms/aspire-in-the-belly
 🎙️ 진행: 김진석 (Microsoft MVP), 박구삼 (Microsoft MVP), 유저스틴 (Microsoft)
+
+## Source Code 설명
+
+- [시작하기](./0_start/)
+- [최종결과](./1_final/)
+
